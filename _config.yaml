@@ -6,11 +6,12 @@ github_username: raladkat
 email: raladevops1@gmail.com
 linkedin_username: rajendra-ladkat-b337a350
 
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes"
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
 
 author:
   name: Rajendra N. Ladkat
