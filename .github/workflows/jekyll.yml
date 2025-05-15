@@ -1,21 +1,22 @@
-name: Build Jekyll site
+name: Build and Deploy Jekyll Site
 
 on:
   push:
     branches:
-      - main  # or your branch name
+      - main
 
 jobs:
   jekyll:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout source
+        uses: actions/checkout@v3
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1' # or use 2.7 for jekyll 3.10
+          ruby-version: 2.7  # Jekyll 3.10 compatible
 
       - name: Install dependencies
         run: |

@@ -1,19 +1,34 @@
-title: "Rajendra N. Ladkat – DevOps & Cloud Consultant"
-description: "Driving DevSecOps & SRE Innovation | Architecting Scalable Cloud Systems"
-baseurl: ""
-url: "https://<your-github-username>.github.io"
-github_username: raladkat
+title: Rajendra Ladkat | DevOps & Cloud Consultant
 email: raladevops1@gmail.com
-linkedin_username: rajendra-ladkat-b337a350
+description: >-
+  Senior Infrastructure Consultant | DevSecOps Architect | Cloud Automation Specialist
+baseurl: ""
+url: "https://rajendraladkat1919.github.io"
 
 remote_theme: "mmistakes/minimal-mistakes"
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-include-cache
 
+markdown: kramdown
+kramdown:
+  input: GFM
 
 author:
-  name: Rajendra N. Ladkat
-  avatar: "/assets/images/profile.jpg"
-  bio: "DevOps Consultant | Cloud Architect | DevSecOps Evangelist"
+  name: "Rajendra Ladkat"
+  avatar: "/assets/images/avatar.png"
+  bio: "Senior DevOps Consultant | Cloud Infra Architect | DevSecOps Strategist"
+  location: "India"
+  links:
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:raladevops1@gmail.com"
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/rajendraladkat1919"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://linkedin.com/in/rajendra-ladkat-b337a350"
