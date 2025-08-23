@@ -1,4 +1,3 @@
-# 👋 Rajendra Ladkat - Solving Problems Beyond Imagination — Delivering Real-World Impact
 ### Platform & Infrastructure Pioneer
 
 > I don’t just architect — I build infrastructure from the ground up that goes beyond supporting production.  
