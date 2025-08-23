@@ -1,8 +1,3 @@
----
-title: Rajendra Ladkat | Platform & Infrastructure Pioneer
-layout: default
----
-
 # 👋 Rajendra Ladkat - Solving Problems Beyond Imagination — Delivering Real-World Impact
 ### Platform & Infrastructure Pioneer
 
