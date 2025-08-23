@@ -9,3 +9,5 @@ gem "jekyll-include-cache"
 
 
 
+
+gem "kramdown-parser-gfm", "~> 1.1"
