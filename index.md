@@ -1,11 +1,3 @@
-
----
-layout: home
-title: "Rajendra Ladkat – Platform and Infrastructure Pioneer"
-description: "Solving Problems Beyond Imagination — Delivering Real-World Impact"
-permalink: /
----
-
 # 👋 Rajendra Ladkat - Solving Problems Beyond Imagination — Delivering Real-World Impact
 ### Platform & Infrastructure Pioneer
 
