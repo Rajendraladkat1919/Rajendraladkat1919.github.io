@@ -1,10 +1,18 @@
+
+---
+layout: home
+title: "Rajendra Ladkat – Platform and Infrastructure Pioneer"
+description: "Solving Problems Beyond Imagination — Delivering Real-World Impact"
+permalink: /
+---
+
 # 👋 Rajendra Ladkat - Solving Problems Beyond Imagination — Delivering Real-World Impact
 ### Platform & Infrastructure Pioneer
 
 > I don’t just architect — I build infrastructure from the ground up that goes beyond supporting production.  
 > It drives business transformation through agility, automation, and operational excellence.
 
-📧 [Email](mailto:youremail@example.com) • [LinkedIn](https://linkedin.com/in/your-profile) • [GitHub](https://github.com/Rajendraladkat1919)
+📧 [Email](mailto:rajendraladkat1910@gmail.com) • [LinkedIn](https://www.linkedin.com/in/rajendra-ladkat-b337a350/) • [GitHub](https://github.com/Rajendraladkat1919)
 
 ---
 
