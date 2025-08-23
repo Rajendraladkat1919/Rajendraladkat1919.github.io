@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write  # 🔧 This is required for GitHub Actions to push to the repo
+
 jobs:
   jekyll:
     runs-on: ubuntu-latest
@@ -16,7 +19,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7  # Compatible with Jekyll 3.x
+          ruby-version: 2.7
 
       - name: Install dependencies
         run: |
