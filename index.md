@@ -1,12 +1,3 @@
-### Platform & Infrastructure Pioneer
-
-> I don’t just architect — I build infrastructure from the ground up that goes beyond supporting production.  
-> It drives business transformation through agility, automation, and operational excellence.
-
-📧 [Email](mailto:rajendraladkat1910@gmail.com) • [LinkedIn](https://www.linkedin.com/in/rajendra-ladkat-b337a350/) • [GitHub](https://github.com/Rajendraladkat1919)
-
----
-
 ## 👨‍💻 Welcome
 
 Hi, I’m **Rajendra N. Ladkat**, a **Senior DevOps & Cloud Infrastructure Consultant** with 10+ years of experience.  
