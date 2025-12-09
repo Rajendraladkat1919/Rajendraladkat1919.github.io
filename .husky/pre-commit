@@ -1,0 +1,45 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "🔍 Running pre-commit checks..."
+
+# Check for common secret patterns before commit
+PATTERNS=(
+  "AKIA[0-9A-Z]{16}"
+  "sk_live_[0-9a-zA-Z]{32,}"
+  "sk_test_[0-9a-zA-Z]{32,}"
+  "ghp_[0-9a-zA-Z]{36}"
+  "xox[baprs]-[0-9a-zA-Z-]{10,48}"
+  "-----BEGIN.*PRIVATE KEY-----"
+  "password\s*[:=]\s*['\"][^'\"]+['\"]"
+  "api[_-]?key\s*[:=]\s*['\"][^'\"]+['\"]"
+  "secret\s*[:=]\s*['\"][^'\"]+['\"]"
+)
+
+FOUND_SECRETS=false
+
+for pattern in "${PATTERNS[@]}"; do
+  if git diff --cached | grep -i -E "$pattern"; then
+    echo "❌ ERROR: Potential secret detected: $pattern"
+    echo "Please remove sensitive information before committing."
+    FOUND_SECRETS=true
+  fi
+done
+
+# Check for .env files
+if git diff --cached --name-only | grep -E '\.env$|\.env\.|\.secret|\.key$|\.pem$|credentials'; then
+  echo "❌ ERROR: Attempting to commit sensitive files!"
+  echo "Files:"
+  git diff --cached --name-only | grep -E '\.env$|\.env\.|\.secret|\.key$|\.pem$|credentials'
+  FOUND_SECRETS=true
+fi
+
+if [ "$FOUND_SECRETS" = true ]; then
+  echo ""
+  echo "🚫 Commit blocked due to potential secrets."
+  echo "Please review your changes and remove any sensitive information."
+  exit 1
+fi
+
+echo "✅ Pre-commit checks passed"
+
