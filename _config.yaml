@@ -1,22 +1,50 @@
+# Site Settings
 title: Rajendra Ladkat | DevOps & Cloud Consultant
 email: raladevops1@gmail.com
 description: >-
   Senior Infrastructure Consultant | DevSecOps Architect | Cloud Automation Specialist
+  with 10+ years of experience helping startups and enterprises modernize infrastructure,
+  implement DevSecOps, and scale securely in the cloud.
 baseurl: ""
 url: "https://rajendraladkat1919.github.io"
+lang: "en-US"
+locale: "en_US"
 
+# Theme
 remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "default"
+search: true
 
+# Build Settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-include-cache
 
-markdown: kramdown
-kramdown:
-  input: GFM
+# SEO Settings
+twitter:
+  username: ""
+  card: "summary_large_image"
 
+# Social Sharing
+social:
+  type: "author"
+  links:
+    - "https://github.com/rajendraladkat1919"
+    - "https://linkedin.com/in/rajendra-ladkat-b337a350"
+    - "mailto:raladevops1@gmail.com"
+
+# Author Information
 author:
   name: "Rajendra Ladkat"
   avatar: "/assets/images/avatar.png"
@@ -32,3 +60,15 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
       url: "https://linkedin.com/in/rajendra-ladkat-b337a350"
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "single"
+      author_profile: true
+      share: true
+      comments: false
+      read_time: true
