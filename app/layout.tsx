@@ -13,8 +13,9 @@ export const metadata: Metadata = {
     title: 'Rajendra Ladkat | AI Infrastructure Engineer | DevOps and Cloud Consultant',
     description: 'AI Infrastructure Engineer | Platform Engineer | Infrastructure Consultant',
     type: 'website',
-    url: 'https://rajendraladkat1919.github.io',
+    url: 'https://rala01.github.io',
   },
+  metadataBase: new URL('https://rala01.github.io'),
   twitter: {
     card: 'summary_large_image',
   },
