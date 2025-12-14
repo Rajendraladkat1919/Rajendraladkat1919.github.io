@@ -123,11 +123,7 @@ temp/
 *.swp
 *.swo
 
-# Jekyll (keeping old files for reference)
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+# Jekyll files removed - using Next.js now
 
 # Package manager lock files (optional - uncomment if you want to ignore)
 # package-lock.json
