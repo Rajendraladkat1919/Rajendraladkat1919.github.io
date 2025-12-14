@@ -5,13 +5,13 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Rajendra Ladkat | DevOps & Cloud Consultant',
-  description: 'Senior Infrastructure Consultant | DevSecOps Architect | Cloud Automation Specialist with 10+ years of experience helping startups and enterprises modernize infrastructure, implement DevSecOps, and scale securely in the cloud.',
-  keywords: ['DevOps', 'Cloud Infrastructure', 'DevSecOps', 'AWS', 'Kubernetes', 'Terraform', 'CI/CD'],
+  title: 'Rajendra Ladkat | DevOps & Cloud Infrastructure Consultant | AI Infrastructure Engineer',
+  description: 'AI Infrastructure Engineer | DevOps & Cloud Infrastructure Consultant | DevSecOps Architect | Cloud Automation Specialist with 10+ years of experience helping startups and enterprises modernize infrastructure, implement DevSecOps, and scale securely in the cloud.',
+  keywords: ['AI Infrastructure', 'DevOps', 'Cloud Infrastructure', 'DevSecOps', 'AWS', 'Kubernetes', 'Terraform', 'CI/CD', 'ML Infrastructure'],
   authors: [{ name: 'Rajendra Ladkat' }],
   openGraph: {
-    title: 'Rajendra Ladkat | DevOps & Cloud Consultant',
-    description: 'Senior Infrastructure Consultant | DevSecOps Architect | Cloud Automation Specialist',
+    title: 'Rajendra Ladkat | DevOps & Cloud Infrastructure Consultant | AI Infrastructure Engineer',
+    description: 'AI Infrastructure Engineer | DevOps & Cloud Infrastructure Consultant | DevSecOps Architect | Cloud Automation Specialist',
     type: 'website',
     url: 'https://rajendraladkat1919.github.io',
   },

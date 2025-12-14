@@ -19,6 +19,7 @@ export default function Header() {
 
   const navLinks = [
     { href: '#summary', label: 'Summary' },
+    { href: '#services', label: 'Services' },
     { href: '#skills', label: 'Skills' },
     { href: '#experience', label: 'Experience' },
     { href: '#education', label: 'Education' },
@@ -122,4 +123,3 @@ export default function Header() {
     </header>
   )
 }
-

@@ -1,8 +1,9 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Section from '@/components/Section'
+import ScrollingServices from '@/components/ScrollingServices'
 import Image from 'next/image'
-import { FaGithub, FaLinkedin, FaEnvelope, FaAward, FaGraduationCap, FaCode } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaEnvelope, FaAward, FaGraduationCap, FaCode, FaChalkboardTeacher, FaHandshake, FaUserTie, FaLaptopCode } from 'react-icons/fa'
 
 export default function Home() {
   const skills = {
@@ -166,9 +167,10 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Header />
+      <ScrollingServices />
       
       {/* Hero Section */}
-      <main className="pt-20">
+      <main className="pt-32">
         <section className="container mx-auto px-4 py-20 text-center">
           <div className="max-w-4xl mx-auto">
             {/* Profile Photo */}
@@ -188,10 +190,10 @@ export default function Home() {
               Rajendra Ladkat
             </h1>
             <p className="text-2xl md:text-3xl text-gray-700 dark:text-gray-300 mb-4">
-              DevOps & Cloud Infrastructure Consultant
+              DevOps & Cloud Infrastructure Consultant | AI Infrastructure Engineer
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
-              Senior Infrastructure Consultant | DevSecOps Architect | Cloud Automation Specialist
+              AI Infrastructure Engineer | Senior Infrastructure Consultant | DevSecOps Architect | Cloud Automation Specialist
             </p>
             <div className="flex justify-center space-x-4">
               <a
@@ -230,6 +232,238 @@ export default function Home() {
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                 <strong className="text-primary-600 dark:text-primary-400">Cloud & AI Infrastructure Leader</strong> with a decade of experience architecting and scaling distributed systems, AI/ML training platforms, and mission-critical production environments across multi-cloud and hybrid setups. Proven in driving 0→1 platform engineering initiatives, modernizing cloud-native ecosystems, and delivering secure, highly available, cost-efficient infrastructure for global-scale applications. Skilled in leading cross-functional teams, defining technical strategy, and solving complex distributed-systems challenges with a focus on operational excellence and real-world impact. Eager to contribute to a dynamic team and learn from experienced professionals. I am excited to apply my skills and contribute to projects that make a real difference.
               </p>
+            </div>
+          </div>
+        </Section>
+
+        {/* Services Section */}
+        <Section id="services" title="Services & Training" className="bg-gray-50 dark:bg-gray-900">
+          <div className="max-w-6xl mx-auto">
+            <p className="text-center text-lg text-gray-600 dark:text-gray-400 mb-12">
+              Offering professional services in infrastructure consultancy, freelancing, mentoring, and hands-on DevOps training
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              {/* Freelancing */}
+              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
+                <div className="flex items-center mb-4">
+                  <FaHandshake className="text-primary-600 dark:text-primary-400 text-3xl mr-4" />
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Freelancing</h3>
+                </div>
+                <p className="text-gray-700 dark:text-gray-300 mb-4">
+                  Available for freelance projects in cloud infrastructure, DevOps automation, and platform engineering. I deliver end-to-end solutions from architecture design to implementation and optimization.
+                </p>
+                <ul className="space-y-2 text-gray-600 dark:text-gray-400">
+                  <li className="flex items-start">
+                    <span className="text-primary-600 dark:text-primary-400 mr-2">•</span>
+                    <span>Cloud infrastructure design & implementation</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary-600 dark:text-primary-400 mr-2">•</span>
+                    <span>DevOps pipeline automation</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary-600 dark:text-primary-400 mr-2">•</span>
+                    <span>Infrastructure as Code (IaC) development</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary-600 dark:text-primary-400 mr-2">•</span>
+                    <span>Cloud migration & modernization</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Infrastructure Consultancy */}
+              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
+                <div className="flex items-center mb-4">
+                  <FaUserTie className="text-primary-600 dark:text-primary-400 text-3xl mr-4" />
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Infrastructure Consultancy</h3>
+                </div>
+                <p className="text-gray-700 dark:text-gray-300 mb-4">
+                  Strategic consulting services to help organizations design, implement, and optimize their cloud-native infrastructure and DevOps practices.
+                </p>
+                <ul className="space-y-2 text-gray-600 dark:text-gray-400">
+                  <li className="flex items-start">
+                    <span className="text-primary-600 dark:text-primary-400 mr-2">•</span>
+                    <span>Infrastructure architecture review & design</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary-600 dark:text-primary-400 mr-2">•</span>
+                    <span>DevSecOps strategy & implementation</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary-600 dark:text-primary-400 mr-2">•</span>
+                    <span>Cost optimization & performance tuning</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary-600 dark:text-primary-400 mr-2">•</span>
+                    <span>Security & compliance assessment</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Mentoring */}
+              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
+                <div className="flex items-center mb-4">
+                  <FaChalkboardTeacher className="text-primary-600 dark:text-primary-400 text-3xl mr-4" />
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Mentoring</h3>
+                </div>
+                <p className="text-gray-700 dark:text-gray-300 mb-4">
+                  One-on-one and team mentoring to accelerate your DevOps journey. Get personalized guidance on career growth, technical challenges, and best practices.
+                </p>
+                <ul className="space-y-2 text-gray-600 dark:text-gray-400">
+                  <li className="flex items-start">
+                    <span className="text-primary-600 dark:text-primary-400 mr-2">•</span>
+                    <span>Career guidance & skill development</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary-600 dark:text-primary-400 mr-2">•</span>
+                    <span>Technical problem-solving sessions</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary-600 dark:text-primary-400 mr-2">•</span>
+                    <span>Architecture review & feedback</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary-600 dark:text-primary-400 mr-2">•</span>
+                    <span>Team coaching & knowledge transfer</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* DevOps Training */}
+              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
+                <div className="flex items-center mb-4">
+                  <FaLaptopCode className="text-primary-600 dark:text-primary-400 text-3xl mr-4" />
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white">DevOps Training</h3>
+                </div>
+                <p className="text-gray-700 dark:text-gray-300 mb-4">
+                  Hands-on training programs covering the complete cloud-native stack. Practical, real-world scenarios to build production-ready skills.
+                </p>
+                <ul className="space-y-2 text-gray-600 dark:text-gray-400">
+                  <li className="flex items-start">
+                    <span className="text-primary-600 dark:text-primary-400 mr-2">•</span>
+                    <span>Interactive workshops & bootcamps</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary-600 dark:text-primary-400 mr-2">•</span>
+                    <span>Customized training programs</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary-600 dark:text-primary-400 mr-2">•</span>
+                    <span>Lab exercises & real-world projects</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary-600 dark:text-primary-400 mr-2">•</span>
+                    <span>Certification preparation support</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Training Topics */}
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+                Hands-On Training Topics
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {/* Infrastructure as Code */}
+                <div className="border-l-4 border-primary-600 dark:border-primary-400 pl-4">
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3 flex items-center">
+                    <FaCode className="text-primary-600 dark:text-primary-400 mr-2" />
+                    Infrastructure as Code
+                  </h4>
+                  <ul className="space-y-2 text-gray-600 dark:text-gray-400">
+                    <li>• Terraform</li>
+                    <li>• Terragrunt</li>
+                    <li>• Module development</li>
+                    <li>• State management</li>
+                  </ul>
+                </div>
+
+                {/* Cloud Platforms */}
+                <div className="border-l-4 border-primary-600 dark:border-primary-400 pl-4">
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3 flex items-center">
+                    <FaCode className="text-primary-600 dark:text-primary-400 mr-2" />
+                    Cloud Platforms
+                  </h4>
+                  <ul className="space-y-2 text-gray-600 dark:text-gray-400">
+                    <li>• AWS (EC2, S3, VPC, IAM)</li>
+                    <li>• Multi-cloud strategies</li>
+                    <li>• Cloud architecture patterns</li>
+                    <li>• Cost optimization</li>
+                  </ul>
+                </div>
+
+                {/* Containerization */}
+                <div className="border-l-4 border-primary-600 dark:border-primary-400 pl-4">
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3 flex items-center">
+                    <FaCode className="text-primary-600 dark:text-primary-400 mr-2" />
+                    Containerization
+                  </h4>
+                  <ul className="space-y-2 text-gray-600 dark:text-gray-400">
+                    <li>• Docker</li>
+                    <li>• Kubernetes</li>
+                    <li>• Container orchestration</li>
+                    <li>• Helm charts</li>
+                  </ul>
+                </div>
+
+                {/* Observability Stack */}
+                <div className="border-l-4 border-primary-600 dark:border-primary-400 pl-4">
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3 flex items-center">
+                    <FaCode className="text-primary-600 dark:text-primary-400 mr-2" />
+                    Observability Stack
+                  </h4>
+                  <ul className="space-y-2 text-gray-600 dark:text-gray-400">
+                    <li>• Prometheus</li>
+                    <li>• Grafana</li>
+                    <li>• Metrics & alerting</li>
+                    <li>• Dashboard creation</li>
+                  </ul>
+                </div>
+
+                {/* CI/CD Pipelines */}
+                <div className="border-l-4 border-primary-600 dark:border-primary-400 pl-4">
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3 flex items-center">
+                    <FaCode className="text-primary-600 dark:text-primary-400 mr-2" />
+                    CI/CD Pipelines
+                  </h4>
+                  <ul className="space-y-2 text-gray-600 dark:text-gray-400">
+                    <li>• GitHub Actions</li>
+                    <li>• Jenkins</li>
+                    <li>• ArgoCD</li>
+                    <li>• GitOps workflows</li>
+                  </ul>
+                </div>
+
+                {/* Logging Solutions */}
+                <div className="border-l-4 border-primary-600 dark:border-primary-400 pl-4">
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3 flex items-center">
+                    <FaCode className="text-primary-600 dark:text-primary-400 mr-2" />
+                    Logging Solutions
+                  </h4>
+                  <ul className="space-y-2 text-gray-600 dark:text-gray-400">
+                    <li>• ELK Stack (Elasticsearch, Logstash, Kibana)</li>
+                    <li>• Loki</li>
+                    <li>• Log aggregation & analysis</li>
+                    <li>• Centralized logging</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* CTA */}
+            <div className="mt-12 text-center">
+              <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
+                Interested in working together or learning more about my services?
+              </p>
+              <a
+                href="#contact"
+                className="inline-block bg-primary-600 text-white px-8 py-4 rounded-lg hover:bg-primary-700 transition-colors text-lg font-semibold"
+              >
+                Get in Touch
+              </a>
             </div>
           </div>
         </Section>
@@ -406,36 +640,6 @@ export default function Home() {
                   </p>
                 </a>
               ))}
-            </div>
-          </div>
-        </Section>
-
-        {/* GitHub Stats Section */}
-        <Section id="github-stats" title="GitHub Statistics">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="https://github-readme-stats.vercel.app/api?username=rajendraladkat1919&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF"
-                  alt="GitHub Stats"
-                  className="w-full"
-                  loading="lazy"
-                  referrerPolicy="no-referrer"
-                  crossOrigin="anonymous"
-                />
-              </div>
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="https://streak-stats.demolab.com/?user=rajendraladkat1919&theme=tokyonight&hide_border=true&background=0D1117&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF"
-                  alt="GitHub Streak"
-                  className="w-full"
-                  loading="lazy"
-                  referrerPolicy="no-referrer"
-                  crossOrigin="anonymous"
-                />
-              </div>
             </div>
           </div>
         </Section>
