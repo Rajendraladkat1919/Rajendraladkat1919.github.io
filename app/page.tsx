@@ -3,7 +3,7 @@ import Footer from '@/components/Footer'
 import Section from '@/components/Section'
 import ScrollingServices from '@/components/ScrollingServices'
 import Image from 'next/image'
-import { FaGithub, FaLinkedin, FaEnvelope, FaAward, FaGraduationCap, FaCode, FaChalkboardTeacher, FaHandshake, FaUserTie, FaLaptopCode, FaAmazon } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaEnvelope, FaAward, FaGraduationCap, FaCode, FaChalkboardTeacher, FaHandshake, FaUserTie, FaLaptopCode, FaTrophy } from 'react-icons/fa'
 
 export default function Home() {
   const skills = {
