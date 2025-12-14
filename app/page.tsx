@@ -3,7 +3,7 @@ import Footer from '@/components/Footer'
 import Section from '@/components/Section'
 import ScrollingServices from '@/components/ScrollingServices'
 import Image from 'next/image'
-import { FaGithub, FaLinkedin, FaEnvelope, FaAward, FaGraduationCap, FaCode, FaChalkboardTeacher, FaHandshake, FaUserTie, FaLaptopCode } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaEnvelope, FaAward, FaGraduationCap, FaCode, FaChalkboardTeacher, FaHandshake, FaUserTie, FaLaptopCode, FaAmazon } from 'react-icons/fa'
 
 export default function Home() {
   const skills = {
@@ -190,10 +190,10 @@ export default function Home() {
               Rajendra Ladkat
             </h1>
             <p className="text-2xl md:text-3xl text-gray-700 dark:text-gray-300 mb-4">
-              DevOps & Cloud Infrastructure Consultant | AI Infrastructure Engineer
+              AI Infrastructure Engineer | DevOps and Cloud Consultant
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
-              AI Infrastructure Engineer | Senior Infrastructure Consultant | DevSecOps Architect | Cloud Automation Specialist
+              AI Infrastructure Engineer | Platform Engineer | Infrastructure Consultant
             </p>
             <div className="flex justify-center space-x-4">
               <a
@@ -232,6 +232,40 @@ export default function Home() {
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                 <strong className="text-primary-600 dark:text-primary-400">Cloud & AI Infrastructure Leader</strong> with a decade of experience architecting and scaling distributed systems, AI/ML training platforms, and mission-critical production environments across multi-cloud and hybrid setups. Proven in driving 0→1 platform engineering initiatives, modernizing cloud-native ecosystems, and delivering secure, highly available, cost-efficient infrastructure for global-scale applications. Skilled in leading cross-functional teams, defining technical strategy, and solving complex distributed-systems challenges with a focus on operational excellence and real-world impact. Eager to contribute to a dynamic team and learn from experienced professionals. I am excited to apply my skills and contribute to projects that make a real difference.
               </p>
+            </div>
+          </div>
+        </Section>
+
+        {/* Key Achievement Section */}
+        <Section id="achievement" title="Key Achievement" className="bg-gray-50 dark:bg-gray-900">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gradient-to-r from-primary-600 to-primary-700 dark:from-primary-700 dark:to-primary-800 rounded-lg shadow-xl p-8 text-white">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0">
+                  <FaTrophy className="text-4xl text-white" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
+                    <span>Amazon Professional Services</span>
+                  </h3>
+                  <p className="text-lg mb-4 text-primary-100">
+                    DevOps Engineer | 2+ Years
+                  </p>
+                  <p className="text-primary-50 leading-relaxed">
+                    Worked as a DevOps Engineer with Amazon Professional Services team for more than 2 years, 
+                    helping enterprise clients migrate from on-premises data centers to AWS cloud. 
+                    Led multiple cloud migration projects, designed scalable infrastructure architectures, 
+                    and implemented DevOps best practices to ensure seamless transitions while maintaining 
+                    high availability and security standards.
+                  </p>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    <span className="bg-white/20 px-3 py-1 rounded-full text-sm">AWS Migration</span>
+                    <span className="bg-white/20 px-3 py-1 rounded-full text-sm">Data Center to Cloud</span>
+                    <span className="bg-white/20 px-3 py-1 rounded-full text-sm">Enterprise Solutions</span>
+                    <span className="bg-white/20 px-3 py-1 rounded-full text-sm">DevOps Practices</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </Section>
