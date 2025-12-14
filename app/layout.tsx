@@ -18,6 +18,25 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
   },
+  other: {
+    'X-DNS-Prefetch-Control': 'on',
+    'X-Frame-Options': 'SAMEORIGIN',
+    'X-Content-Type-Options': 'nosniff',
+    'X-XSS-Protection': '1; mode=block',
+    'Referrer-Policy': 'strict-origin-when-cross-origin',
+    'Permissions-Policy': 'camera=(), microphone=(), geolocation=()',
+    'Content-Security-Policy': [
+      "default-src 'self'",
+      "script-src 'self' 'unsafe-eval' 'unsafe-inline'",
+      "style-src 'self' 'unsafe-inline'",
+      "img-src 'self' data: https://github-readme-stats.vercel.app https://streak-stats.demolab.com",
+      "font-src 'self' data:",
+      "connect-src 'self'",
+      "frame-ancestors 'self'",
+      "base-uri 'self'",
+      "form-action 'self'",
+    ].join('; '),
+  },
 }
 
 export default function RootLayout({

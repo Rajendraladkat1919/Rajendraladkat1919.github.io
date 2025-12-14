@@ -420,6 +420,9 @@ export default function Home() {
                   src="https://github-readme-stats.vercel.app/api?username=rajendraladkat1919&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF"
                   alt="GitHub Stats"
                   className="w-full"
+                  loading="lazy"
+                  referrerPolicy="no-referrer"
+                  crossOrigin="anonymous"
                 />
               </div>
               <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
@@ -428,6 +431,9 @@ export default function Home() {
                   src="https://streak-stats.demolab.com/?user=rajendraladkat1919&theme=tokyonight&hide_border=true&background=0D1117&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF"
                   alt="GitHub Streak"
                   className="w-full"
+                  loading="lazy"
+                  referrerPolicy="no-referrer"
+                  crossOrigin="anonymous"
                 />
               </div>
             </div>

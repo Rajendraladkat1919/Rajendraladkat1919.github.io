@@ -1,0 +1,16 @@
+# Ignore patterns for gitleaks
+# Add file patterns or specific content that should be ignored
+
+# Example: Ignore specific test files
+# **/test/**/*.json
+
+# Ignore README files that might contain example patterns
+README.md
+**/README.md
+
+# Ignore documentation
+**/*.md
+
+# Ignore this file itself
+.gitleaksignore
+
