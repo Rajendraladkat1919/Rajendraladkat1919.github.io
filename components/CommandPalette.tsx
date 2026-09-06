@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { FaSearch } from 'react-icons/fa'
-import { capabilities, caseStudies } from '@/lib/content'
+import { capabilities, caseStudies, productionWork } from '@/lib/content'
 
 type Entry = {
   group: string
@@ -36,6 +36,13 @@ const entries: Entry[] = [
     detail: capability.description,
     target: '#leverage',
     keywords: `${capability.title} ${capability.description} ${capability.points.join(' ')}`.toLowerCase(),
+  })),
+  ...productionWork.map((area) => ({
+    group: 'Exploring in production',
+    title: area.title,
+    detail: area.items.join(', '),
+    target: '#focus',
+    keywords: `${area.title} ${area.items.join(' ')}`.toLowerCase(),
   })),
 ]
 

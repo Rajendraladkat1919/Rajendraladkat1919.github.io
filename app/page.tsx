@@ -9,6 +9,7 @@ import {
   FaLinkedin,
 } from 'react-icons/fa'
 import {
+  productionWork,
   capabilities,
   caseStudies,
   credentials,
@@ -90,6 +91,35 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
+              </div>
+            </div>
+
+            <div id="focus" className="mt-16 border-t border-black/10 pt-12 md:mt-20 md:pt-16">
+              <p className="section-kicker">Exploring in production</p>
+              <h2 className="max-w-3xl text-3xl font-semibold leading-[1.08] tracking-[-0.04em] md:text-5xl">
+                Exploring and working on these concepts at production level.
+              </h2>
+              <div className="mt-10 grid gap-px overflow-hidden rounded-2xl border border-black/10 bg-black/10 sm:grid-cols-2">
+                {productionWork.map((area, index) => (
+                  <article key={area.title} className="bg-white p-6 md:p-8">
+                    <span className="font-mono text-xs text-[#8a8a80]">
+                      {String(index + 1).padStart(2, '0')}
+                    </span>
+                    <h3 className="mt-6 text-xl font-semibold tracking-[-0.025em]">
+                      {area.title}
+                    </h3>
+                    <ul className="mt-5 flex flex-wrap gap-2">
+                      {area.items.map((item) => (
+                        <li
+                          key={item}
+                          className="rounded-full border border-black/10 bg-[#f7f7f3] px-3 py-1 text-xs font-medium text-[#3f3f38]"
+                        >
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </article>
+                ))}
               </div>
             </div>
           </div>

@@ -439,6 +439,42 @@ export const engagementModels = [
   },
 ]
 
+export const productionWork = [
+  {
+    title: 'Training & GPU',
+    items: ['Distributed training', 'GPU infrastructure'],
+  },
+  {
+    title: 'Serving',
+    items: [
+      'Inference optimization',
+      'Model serving at scale',
+      'Multi-model serving',
+      'Model / LLM gateways',
+      'Canary / blue-green ML deployments',
+    ],
+  },
+  {
+    title: 'Lifecycle & cost',
+    items: [
+      'Feature stores',
+      'Data / model lineage',
+      'Automated retraining',
+      'Cost optimization',
+    ],
+  },
+  {
+    title: 'Trust & LLMOps',
+    items: [
+      'ML security',
+      'Responsible AI',
+      'LLMOps',
+      'RAG evaluation',
+      'LLM observability',
+    ],
+  },
+]
+
 export const optimizeFor = [
   'Developer experience',
   'Security',
