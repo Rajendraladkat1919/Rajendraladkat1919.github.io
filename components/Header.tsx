@@ -3,7 +3,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
-import { FaGithub, FaLinkedin, FaEnvelope, FaBars, FaTimes } from 'react-icons/fa'
+import { FaArrowRight, FaBars, FaTimes } from 'react-icons/fa'
+import CommandPalette from '@/components/CommandPalette'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -18,105 +19,85 @@ export default function Header() {
   }, [])
 
   const navLinks = [
-    { href: '#summary', label: 'Summary' },
-    { href: '#services', label: 'Services' },
-    { href: '#skills', label: 'Skills' },
-    { href: '#experience', label: 'Experience' },
-    { href: '#education', label: 'Education' },
-    { href: '#projects', label: 'Projects' },
-    { href: '#contact', label: 'Contact' },
+    { href: '#how-i-think', label: 'How I think' },
+    { href: '#impact', label: 'Impact' },
+    { href: '#architecture', label: 'Architecture' },
+    { href: '#leverage', label: 'Leverage' },
+    { href: '#engage', label: 'Engage' },
   ]
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed left-0 right-0 top-0 z-50 border-b transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-lg'
-          : 'bg-transparent'
+          ? 'border-black/10 bg-[#f7f7f3]/90 backdrop-blur-xl'
+          : 'border-transparent bg-[#f7f7f3]/80 backdrop-blur-md'
       }`}
     >
-      <nav className="container mx-auto px-4 py-4">
+      <nav className="page-shell py-4">
         <div className="flex items-center justify-between">
           <Link
             href="/"
-            className="flex items-center space-x-3 text-2xl font-bold text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors"
+            className="flex items-center gap-3 font-semibold tracking-[-0.02em] text-[#171713]"
           >
-            <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-primary-600 dark:border-primary-400">
-              <Image
-                src="/images/profile-photo.jpg"
-                alt="Rajendra Ladkat"
-                fill
-                className="object-cover"
-                sizes="40px"
-              />
-            </div>
-            <span className="hidden sm:inline">Rajendra Ladkat</span>
-            <span className="sm:hidden">RL</span>
+            <Image
+              src="/images/profile-photo.jpg"
+              alt="Rajendra Ladkat"
+              width={36}
+              height={36}
+              priority
+              className="h-9 w-9 rounded-full object-cover"
+            />
+            <span>Rajendra Ladkat</span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors font-medium"
-              >
-                {link.label}
-              </Link>
-            ))}
-            <div className="flex items-center space-x-4 ml-4">
-              <a
-                href="https://github.com/rajendraladkat1919"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
-                aria-label="GitHub"
-              >
-                <FaGithub size={20} />
-              </a>
-              <a
-                href="https://linkedin.com/in/rajendra-ladkat-b337a350"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
-                aria-label="LinkedIn"
-              >
-                <FaLinkedin size={20} />
-              </a>
-              <a
-                href="mailto:raladevops1@gmail.com"
-                className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
-                aria-label="Email"
-              >
-                <FaEnvelope size={20} />
-              </a>
+          <div className="flex items-center gap-2 lg:gap-6">
+            <div className="hidden items-center gap-6 lg:flex">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm font-medium text-[#5b5b52] transition-colors hover:text-[#171713]"
+                >
+                  {link.label}
+                </Link>
+              ))}
             </div>
-          </div>
+            <CommandPalette />
+            <a className="button button-primary hidden min-h-10 px-5 lg:inline-flex" href="#contact">
+              Contact <FaArrowRight aria-hidden="true" />
+            </a>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden text-gray-700 dark:text-gray-300"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-          </button>
+            <button
+              className="grid h-10 w-10 place-items-center rounded-full border border-black/15 text-[#171713] lg:hidden"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+              aria-expanded={isMenuOpen}
+            >
+              {isMenuOpen ? <FaTimes size={18} /> : <FaBars size={18} />}
+            </button>
+          </div>
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 space-y-2">
+          <div className="mt-4 space-y-1 border-t border-black/10 pb-3 pt-4 lg:hidden">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                className="block rounded-lg px-2 py-3 font-medium text-[#44443d] hover:bg-black/5"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.label}
               </Link>
             ))}
+            <a
+              href="#contact"
+              className="mt-3 flex items-center gap-2 rounded-lg px-2 py-3 font-semibold text-[#4f6b45]"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Contact <FaArrowRight aria-hidden="true" />
+            </a>
           </div>
         )}
       </nav>

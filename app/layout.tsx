@@ -5,13 +5,32 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Rajendra Ladkat | AI Infrastructure Engineer | DevOps and Cloud Consultant',
-  description: 'AI Infrastructure Engineer | Platform Engineer | Infrastructure Consultant with 10+ years of experience helping startups and enterprises modernize infrastructure, implement DevSecOps, and scale securely in the cloud.',
-  keywords: ['AI Infrastructure', 'DevOps', 'Cloud Infrastructure', 'DevSecOps', 'AWS', 'Kubernetes', 'Terraform', 'CI/CD', 'ML Infrastructure', 'Platform Engineering'],
+  title: {
+    default: 'Rajendra Ladkat | Platform Engineering — Staff, FDE, Customer Solutions',
+    template: '%s · Rajendra Ladkat | Platform Engineering — Staff, FDE, Customer Solutions',
+  },
+  description:
+    'Platform Engineer doing lead platform work across Staff-shaped platform engineering, Forward Deployed Engineering and Customer Solutions. 11+ years building enterprise cloud platforms, production AI infrastructure, and skill catalogs across AWS, GCP and Tencent Cloud.',
+  keywords: [
+    'Staff Platform Engineer',
+    'Forward Deployed Engineer',
+    'FDE',
+    'Customer Solutions Engineer',
+    'Platform Engineering',
+    'Platform Engineer',
+    'Internal Developer Platform',
+    'AI Infrastructure',
+    'AWS',
+    'GCP',
+    'Tencent Cloud',
+    'Kubernetes',
+    'Terraform',
+    'FinOps',
+  ],
   authors: [{ name: 'Rajendra Ladkat' }],
   openGraph: {
-    title: 'Rajendra Ladkat | AI Infrastructure Engineer | DevOps and Cloud Consultant',
-    description: 'AI Infrastructure Engineer | Platform Engineer | Infrastructure Consultant',
+    title: 'Rajendra Ladkat | Platform Engineering — Staff, FDE, Customer Solutions',
+    description: 'Building cloud platforms developers love—and businesses trust.',
     type: 'website',
     url: 'https://rajendraladkat1919.github.io',
   },
